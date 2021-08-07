@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// change the theme
+$primary: #fe42ad;
+$secondary: #51f1e3;
+$yellow: #ffd761;
+$orange: #ff6437;
+$danger: #ff0414;
+
+.navbar {
+	background-color: $primary;
+	color: white;
+	min-height: 0;
+
+	.navbar-item {
+		color: white;
+		&:hover {
+			background-color: $secondary;
+			color: black;
+		}
+	}
+}

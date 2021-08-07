@@ -1,25 +1,27 @@
-import logo from '../logo.svg'
-import '../styles/App.css'
+import { Route } from 'react-router-dom'
+import NavigationBar from './NavigationBar'
+import Home from './Home'
+
+import 'bulma/css/bulma.min.css';
+import '../styles/App.scss'
 
 function App(): JSX.Element {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<main>
+			<NavigationBar/>
+			<Route exact path="/" component={Home} />
+			<Route exact path="/music" component={Music} />
+			<Route exact path="/about" component={About} />
+		</main>
 	)
+}
+
+function Music() {
+	return <h2>Music</h2>
+}
+
+function About() {
+	return <h2>About</h2>
 }
 
 export default App
