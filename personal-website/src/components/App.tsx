@@ -10,8 +10,8 @@ function App(): JSX.Element {
 		<main>
 			<NavigationBar/>
 			<Route exact path="/" component={Home} />
-			<Route exact path="/music" component={Music} />
-			<Route exact path="/about" component={About} />
+			<Route exact path="#music" component={Music} />
+			<Route exact path="#about" component={About} />
 		</main>
 	)
 }
