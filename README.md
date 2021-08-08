@@ -1,1 +1,1 @@
-This is a personal project to create an interactive portfolio using React and Typescript. I plan to add features over time including a "message board" using GraphQL and MongoDB and other fun easter eggs.
+This is a personal project to create an interactive portfolio using React and Typescript. I plan to add features over time including a "message board" using GraphQL and MongoDB as well as other fun easter eggs.
